@@ -107,7 +107,7 @@ if user_input := st.chat_input("무엇이 궁금하신가요?"):
             # 설정한다면, 음절단위로 출력하게끔 되어서 좀 더 일찍 답변을 받아볼 수 있게 됩니다.
 
             # LLM 모델설정을 설정합니다. ollama 의 로컬 LLM을 사용하기 때문에 미리 백그라운드에 설정이 필요합니다.
-            # 이번에 사용한 모델은 llama3에 한글을 파인튜닝한 모델입니다.
+            # 이번에 사용한 모델은 gemma4 26b 모델입니다.
             llm = ChatOllama(
                 # model="exaone3.5:latest",
                 model="gemma4:26b-a4b-it-q8_0",
